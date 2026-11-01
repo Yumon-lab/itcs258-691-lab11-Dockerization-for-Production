@@ -1,0 +1,11 @@
+PS C:\Users\user\Desktop\ICT_MU_work\Back End development\Week 11\projects\express-api> docker stop lab11-express
+lab11-express
+PS C:\Users\user\Desktop\ICT_MU_work\Back End development\Week 11\projects\express-api> docker rm lab11-express
+lab11-express
+PS C:\Users\user\Desktop\ICT_MU_work\Back End development\Week 11\projects\express-api> docker run -d --name lab11-express -p 127.0.0.1:8080:3000 --env-file .env.example lab11-express:v2
+8efea130730ef414ba25a9458db218c1c7aa858110d31fe3af1069f1a3edb9a0
+PS C:\Users\user\Desktop\ICT_MU_work\Back End development\Week 11\projects\express-api> curl.exe http://localhost:8080/
+{"message":"Hello from Docker Express","lab":111}
+PS C:\Users\user\Desktop\ICT_MU_work\Back End development\Week 11\projects\express-api> 
+
+
