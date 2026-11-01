@@ -6,7 +6,7 @@ import { NestFactory } from '@nestjs/core';
 class AppController {
   @Get()
   home() {
-    return { message: process.env.APP_MESSAGE || 'Hello from local NestJS', lab: 11 };
+    return { message: process.env.APP_MESSAGE || 'Hello from local NestJS', lab: 111 };
   }
 
   @Get('health')
